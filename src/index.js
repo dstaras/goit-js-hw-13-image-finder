@@ -4,7 +4,7 @@ import * as basicLightbox from 'basiclightbox';
 import '../node_modules/basiclightbox/src/styles/main.scss';
 import './styles.css';
 
-ref.form.addEventListener('submit', ref.searchImage);
+ref.form.addEventListener('submit', ref.searchImage.bind(ref));
 
 ref.gallery.addEventListener('click', event => {
   basicLightbox
